@@ -4,6 +4,7 @@ A running log of decisions and observations as the reproduction proceeds.
 
 ## Decisions
 
+- **2026-05-13**: imzML smoke test passes. pyimzml 1.5.5 reads `Example_Continuous` (3×3 px, 8,399 m/z points/pixel) without issue. Both a single spectrum and an ion image render cleanly. MSI pipeline viable on this hardware.
 - **2026-05-13**: Smoke test passes. CellPose 4 (`cpsam` model) segments `skimage.data.coins()` cleanly — 24/24 objects. Pipeline works end-to-end on Apple Silicon (CPU mode). GPU/MPS deferred until needed.
 - **2026-05-13**: Selected the EUCLID tutorial dataset (La Manno lab) as the starting point because it auto-downloads from Zenodo and provides uMAIA-normalized data + masks, removing several upstream-pipeline blockers.
 - **2026-05-13**: Project will reproduce the analytical half of the Maillat 2026 protocol (sections 6.1–6.7) at tissue/pixel level first, then extend to single-cell if time and data allow.
